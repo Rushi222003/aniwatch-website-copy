@@ -1,0 +1,358 @@
+/* genral statements */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #16151d;
+}
+
+/* logo area */
+.logo_container{
+    width: 100vw;
+    height: 8vh;
+    
+}
+#logo{
+    width:10em;
+    height: 3em;
+    padding-left: 10vw;
+}
+.input0{
+    margin: 2em;
+    width: 25em;
+    height: 2em;
+    border-radius: 5px;
+}
+
+/* home area */
+.home_banner{
+    width: 100%;
+    height: 8vh;
+    background-color: bisque !important;
+    color: white;
+    font-size: 1.5em;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* add and all image area */
+
+    /* common div for add and all images */
+.common{
+    width: 66vw;
+    height: 90vh;
+    float: left;
+}
+
+    /* adds area */
+#adds{
+    width: 66vw;
+    height: 45vh;
+}
+
+    /* images area plus extra left side area */
+.anime_container{
+    width: 66vw;
+    height: 300vh;
+    float: left;
+    margin-top: 3em;        
+}
+/* only all images area */
+.hot_anime{
+    width: 60em;
+    height: 22em;
+    background-color: #262525;
+    float: right;
+}
+/* 1 area of ribbion hot series update */
+.hot_anime1{
+    width: 100%;
+    height: 5vh;
+    background-color: lightgreen;
+    color: white;
+    font-size: 2em;
+}
+/* individual division of all images */
+.poster{
+    width: 56.5vw;
+    height: 27vh;
+    display: flex;
+    justify-content: space-around;
+}
+/* individual image areas div*/
+.image-container{
+    position: relative;
+    display: inline-block;
+    width: 9vw;
+    height: 27vh;
+    /* overflow: hidden; */
+}
+/* individual images areas */
+.img11{
+    width: 100%;
+    height: 100%;           
+}
+.img11:hover{
+    animation: anime 2s;
+}
+@keyframes anime {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+    
+}
+/* individual images division */
+.image{
+   
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.name-overlay{
+    position: absolute;
+}
+/* anime on image */
+.a{
+    background-color: blue; 
+    color: white;
+    top: 0px;
+    left:5.5vw;
+    font-size: 15px;
+    padding: 0.5vh;
+    font-weight: bolder;
+    border-radius: 0.5em;
+}
+/* epsiode number on image */
+.b{
+    top: 24vh;
+    left: 0;
+    background-color: lightgreen;
+    color: black;
+    font-weight:bolder;
+    padding:0.1em;
+    border-radius: 0.2vh;
+}
+/* sub on image  */
+.c{
+    top: 24vh;
+    left: 7.5vw;
+    background-color: gold;
+    padding: 0.1em;
+    border-radius: 0.3em;
+}
+/* individual image area */
+.poster_image{
+    width: 100%;
+    height: 100%;  
+}
+.hot_anime2{
+    width: 100%;
+    height: 5vh;
+    background-color:bisque; 
+    color: white;
+    font-size: 2em;
+}
+/* to view all */
+.button{
+    float: right;
+    margin-right: 2em;
+    margin-top:1em;
+    background-color: #15161d;
+    color: white;
+    padding: 0.4em;
+    font-size: 0.35em;
+}
+h6{
+    color:rgb(124, 122, 122);
+    font-weight: lighter;
+}
+span{
+    color: rgb(250, 237, 237);
+
+}
+.side_container{
+    width: 22vw;
+    height: 150vh;
+    background-color: #262525;
+    float: left;
+    position: relative;
+    /* left:0px; */
+    top: 3vh;
+    left: 5vw;
+}
+.Side_images{
+    width: 4em;
+    height:6em;
+    float: left;
+    margin-left: 0.5vw;
+    margin-top: 1vh;
+
+}
+.num{
+    border: 1px solid white;
+    border-radius: 0.5px;
+    color: white;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 5vh;
+    margin-left: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.side_text{
+    width: 12em; 
+    margin-left: 8em; 
+    margin-top: 1.5em;
+}
+.types{
+    width: 9vw;
+    height: 4vh;
+    background-color: #16151d;
+    color: white;
+    font-weight: lighter;
+    margin-right: 0.5em;
+    margin-top: 2em;
+    margin-left: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p,h4{
+    color: white;
+}
+
+/* hover to get play button */
+#i{
+    position: absolute;
+    color: white;
+    top: 35%;
+    left: 30%;
+    font-size: 4em;
+}
+.itags{
+    display: none;
+}
+.image-container:hover .itags{
+    display: block;
+    
+}
+
+.containerA {
+    position: relative;
+    /* background-color: orange; */
+}
+
+#dropdown-trigger {
+    cursor: pointer;
+    /* margin-right: 1500px; */
+    /* position: fixed; */
+}
+
+#dropdown-content {
+    position: absolute;
+    left: -40vw;
+    display: none;
+    background-color: #16151d;
+    z-index: 50;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+}
+
+#dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    z-index:9;
+    
+
+}
+
+#dropdown-content li {
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#dropdown-content3{
+    position: absolute;
+    padding: 0.5em;
+    background-color: #15161d;
+    line-height: 2em;
+}
+
+#dropdown-content2{
+    position: absolute;
+    left: -2em;
+    background-color: #15161d;
+    width: 7em;
+    padding: 0.5em;
+    line-height: 2em;
+}
+
+
+
+
+
+li{
+    list-style-type: none;
+}
+.choose5{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+}
+.abc{
+    width: 200px;
+    margin: 6px;
+}
+
+.containerA1 {
+    position: relative;
+}
+
+#dropdown-trigger1 {
+    cursor: pointer;
+}
+
+#dropdown-content1 {
+    position: absolute;
+    display: none;
+    background-color: #16151d;
+    color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+} */
+
+ #dropdown-content1 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#dropdown-content1 li {
+    padding: 10px;
+}
+
+.hidden1 {
+    display: none;
+}
+
+
+li{
+    list-style-type: none;
+} 
+
+
+
+p{
+    z-index: 3;
+}
